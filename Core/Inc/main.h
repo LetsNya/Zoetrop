@@ -29,9 +29,23 @@ extern "C" {
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32g4xx_hal.h"
+#include "stm32g4xx_ll_adc.h"
+#include "stm32g4xx_ll_tim.h"
+#include "stm32g4xx_ll_system.h"
+#include "stm32g4xx_ll_gpio.h"
+#include "stm32g4xx_ll_exti.h"
+#include "stm32g4xx_ll_bus.h"
+#include "stm32g4xx_ll_cortex.h"
+#include "stm32g4xx_ll_rcc.h"
+#include "stm32g4xx_ll_utils.h"
+#include "stm32g4xx_ll_pwr.h"
+#include "stm32g4xx_ll_dma.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include <commons.h>
+#include <timers.h>
+#include <adc.h>
 
 /* USER CODE END Includes */
 
@@ -50,8 +64,6 @@ extern "C" {
 
 /* USER CODE END EM */
 
-void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
-
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
 
@@ -60,17 +72,17 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define POT_1_Pin GPIO_PIN_0
+#define POT_1_Pin LL_GPIO_PIN_0
 #define POT_1_GPIO_Port GPIOA
-#define POT_2_Pin GPIO_PIN_1
+#define POT_2_Pin LL_GPIO_PIN_1
 #define POT_2_GPIO_Port GPIOA
-#define ENC_Pin GPIO_PIN_2
+#define ENC_Pin LL_GPIO_PIN_2
 #define ENC_GPIO_Port GPIOA
-#define ON_OFF_Pin GPIO_PIN_4
+#define ON_OFF_Pin LL_GPIO_PIN_4
 #define ON_OFF_GPIO_Port GPIOA
-#define SILNIK_PWM_Pin GPIO_PIN_8
+#define SILNIK_PWM_Pin LL_GPIO_PIN_8
 #define SILNIK_PWM_GPIO_Port GPIOA
-#define LED_EN_Pin GPIO_PIN_4
+#define LED_EN_Pin LL_GPIO_PIN_4
 #define LED_EN_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
