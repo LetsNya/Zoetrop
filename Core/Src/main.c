@@ -92,8 +92,13 @@ int main(void)
   MX_ADC2_Init();
   MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
+
+
   //Initialize timers
   timers_init();
+
+
+
 
   /* USER CODE END 2 */
 
@@ -101,6 +106,8 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
