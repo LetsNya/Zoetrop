@@ -120,6 +120,7 @@ void BusFault_Handler(void)
   while (1)
   {
     /* USER CODE BEGIN W1_BusFault_IRQn 0 */
+	  //sadsad
     /* USER CODE END W1_BusFault_IRQn 0 */
   }
 }
