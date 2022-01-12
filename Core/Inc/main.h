@@ -43,9 +43,6 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include <commons.h>
-#include <timers.h>
-#include <adc.h>
 
 /* USER CODE END Includes */
 
@@ -78,6 +75,7 @@ void Error_Handler(void);
 #define POT_2_GPIO_Port GPIOA
 #define ENC_Pin LL_GPIO_PIN_2
 #define ENC_GPIO_Port GPIOA
+#define ENC_EXTI_IRQn EXTI2_IRQn
 #define ON_OFF_Pin LL_GPIO_PIN_4
 #define ON_OFF_GPIO_Port GPIOA
 #define SILNIK_PWM_Pin LL_GPIO_PIN_8
@@ -93,5 +91,3 @@ void Error_Handler(void);
 #endif
 
 #endif /* __MAIN_H */
-
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

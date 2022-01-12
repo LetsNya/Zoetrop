@@ -1,5 +1,7 @@
 "./Core/Src/adc.o"
 "./Core/Src/commons.o"
+"./Core/Src/encoder.o"
+"./Core/Src/gpio.o"
 "./Core/Src/main.o"
 "./Core/Src/stm32g4xx_hal_msp.o"
 "./Core/Src/stm32g4xx_it.o"
