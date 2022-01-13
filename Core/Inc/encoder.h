@@ -3,3 +3,4 @@
 #include <commons.h>
 
 void encoder_measureVelocity();
+float encoder_getVelocity();

@@ -27,7 +27,7 @@ void adc_init()
 	LL_ADC_REG_StartConversion (ADC_POT2);
 }
 
-//Get the value of chosen potenciometer (POTENCIOMETER_1 or POTENCIOMETER_2)
+//Get the value of chosen potenciometer (potenciometer_1 or potenciometer_2)
 float adc_pot_return(potenciometer_t POT)
 {
 	float conversion = 0;
