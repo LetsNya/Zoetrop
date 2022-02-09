@@ -14,6 +14,7 @@ void timers_init()
 	LL_TIM_EnableCounter(timerPWM);
 	LL_TIM_EnableCounter(timerVelocity);
 	LL_TIM_EnableCounter(timerLED);
+	LL_TIM_EnableAllOutputs(timerLED);
 }
 
 

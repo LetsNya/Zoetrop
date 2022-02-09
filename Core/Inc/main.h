@@ -80,8 +80,6 @@ void Error_Handler(void);
 #define ENC_EXTI_IRQn EXTI2_IRQn
 #define ON_OFF_Pin LL_GPIO_PIN_4
 #define ON_OFF_GPIO_Port GPIOA
-#define SILNIK_PWM_Pin LL_GPIO_PIN_8
-#define SILNIK_PWM_GPIO_Port GPIOA
 #define LED_OUTPUT_Pin LL_GPIO_PIN_4
 #define LED_OUTPUT_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
